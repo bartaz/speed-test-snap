@@ -1,0 +1,20 @@
+name: speed-test
+version: 1.7.0
+summary: Test your internet connection speed and ping using speedtest.net from the CLI
+description: |
+  Test your internet connection speed and ping using speedtest.net from the CLI.
+  
+  Repackaged as snap from npm speed-test module:
+  https://www.npmjs.com/package/speed-test 
+
+confinement: strict
+
+apps:
+  speed-test:
+    command: speed-test
+    plugs: [network-bind]
+
+parts:
+  speed-test:
+    plugin: nodejs
+    node-packages: [speed-test@1.7.0]
