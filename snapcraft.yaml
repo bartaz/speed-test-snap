@@ -1,5 +1,5 @@
 name: speed-test
-version: 2.0.0
+version: 1.8.0.1
 summary: Test your internet connection speed and ping using speedtest.net from the CLI
 description: |
   Test your internet connection speed and ping using speedtest.net from the CLI.
@@ -17,4 +17,4 @@ apps:
 parts:
   speed-test:
     plugin: nodejs
-    node-packages: [speed-test@2.0.0]
+    node-packages: [speed-test@1.8.0]
